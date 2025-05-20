@@ -1,0 +1,16 @@
+{
+    "sections": {
+        "contact": {
+            "type": "contact"
+        },
+        "instagram_feed": {
+            "type": "instagram_feed"
+        }
+    },
+    "layout": "page.contact",
+    "wrapper": "main.main-wrapper",
+    "order": [
+        "contact",
+        "instagram_feed"
+    ]
+}
