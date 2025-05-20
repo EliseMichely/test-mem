@@ -1,0 +1,20 @@
+{
+    "sections": {
+        "list_collection_hero": {
+            "type": "list_collection_hero"
+        },
+        "list_collection": {
+            "type": "list_collection"
+        },
+        "instagram_feed": {
+            "type": "instagram_feed"
+        }
+    },
+    "layout": "list-collections",
+    "wrapper": "main.main-wrapper",
+    "order": [
+        "list_collection_hero",
+        "list_collection",
+        "instagram_feed"
+    ]
+}

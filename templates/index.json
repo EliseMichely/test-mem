@@ -1,0 +1,44 @@
+{
+    "sections": {
+        "hero": {
+            "type": "hero"
+        },
+        "best_sellers": {
+            "type": "best_sellers"
+        },
+        "product_feature": {
+            "type": "product_feature"
+        },
+        "our_story": {
+            "type": "our_story"
+        },
+        "brand_values": {
+            "type": "brand_values"
+        },
+        "shop_categories": {
+            "type": "shop_categories"
+        },
+        "brand_statement": {
+            "type": "brand_statement"
+        },
+        "sample_teaser": {
+            "type": "sample_teaser"
+        },
+        "instagram_feed": {
+            "type": "instagram_feed"
+        }
+    },
+    "layout": "theme",
+    "wrapper": "",
+    "order": [
+        "hero",
+        "best_sellers",
+        "product_feature",
+        "our_story",
+        "brand_values",
+        "shop_categories",
+        "brand_statement",
+        "sample_teaser",
+        "instagram_feed"
+    ]
+}
