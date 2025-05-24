@@ -1,0 +1,13 @@
+<div class="padding-global padding-section-medium no-padding-top"><div class="w-layout-grid product-promotion-grid">{% if section.settings.image_bild %}
+<img id="w-node-f0c4c07b-da10-90f9-2999-34327b7a3a4e-0eb61907" class="content-image" src="{{ section.settings.image_bild | img_url: 'master' }}" alt="{{ section.settings.image_bild.alt }}">
+{% else %}
+ {{  'detailed-apparel-1' | placeholder_svg_tag: 'content-image'  }} 
+{% endif %}
+<div id="w-node-f0c4c07b-da10-90f9-2999-34327b7a3a50-0eb61907" class="product-promotion-content-wrapper"><div class="product-promotion-text-wrapper"><div fade-opacity="" class="small-upper-title">
+{{ section.settings.text_sub_headline }}
+</div>
+<div line-fade="" class="big-hero-heading">
+{{ section.settings.text_headline }}
+</div>
+</div><a href="{{ section.settings.url_button_link }}" fade-opacity="" hover-button="" class="large-button w-inline-block"> <div>{{ section.settings.text_button_label }}</div><svg xmlns="http://www.w3.org/2000/svg" width="100%" viewbox="0 0 20 9" class="button-arrow"><g id="WIP" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g id="Artboard-Copy-20" transform="translate(-1260.000000, -882.000000)" fill="currentColor"><g id="Group-4" transform="translate(738.000000, 843.000000)"><path d="M537.159111,42.9936385 L537.159111,39.5 L542,43.5 L537.159111,47.5 L537.159111,44.0063615 L522,44.0063615 L522,42.9936385 L537.159111,42.9936385 Z" id="Combined-Shape"></path></g></g></g></svg> </a>
+</div></div></div> {% schema %} {"tag":"div","name":"Product Promotion","class":"section-product-promotion","settings":[{"id":"image_bild","type":"image_picker","label":"Bild"},{"id":"text_sub_headline","type":"text","label":"Sub Headline","default":"Golden Body Oil"},{"id":"text_headline","type":"text","label":"Headline","default":"Our blend of unrefined oils that locks in moisture, softens skin, and brings out your natural glow."},{"id":"url_button_link","type":"url","label":"Button Link"},{"id":"text_button_label","type":"text","label":"Button Label","default":"Shop our Body Oils<br\/>"}],"presets":[{"name":"Product Promotion","category":"Liquify","blocks":[]}]} {% endschema %}

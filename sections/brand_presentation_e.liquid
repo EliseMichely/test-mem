@@ -1,0 +1,40 @@
+<div class="padding-global dual-block-presentation"><div class="container-large"><div class="content_grid"><div fade-opacity="" li-content-for-blocks="" id="w-node-_34a29f99-ff2e-a79e-1ed0-daad6c4ea573-0eb6197d" class="content-copy left">
+{% for block in section.blocks %}
+{% case block.type %}
+{% when '@app' %}
+{% render block %}
+{% when 'headline-small' %}
+            <div li-block="Headline small" class="content_block">
+                    
+                    <div class="small-upper-title">
+{{ block.settings.text_sub_headline }}
+</div>
+
+                    
+                </div>
+    {% when 'headline' %}
+            <div li-block="Headline" class="content_block">
+                    
+                    <h2 class="heading-style-h2">
+{{ block.settings.text_headline }}
+</h2>
+
+                    
+                </div>
+    {% when 'text' %}
+            <div li-block="Text" class="content_block">
+                    
+                    <div class="text-size-medium"> {{ block.settings.richtext_presentation }} </div>
+
+                    
+                </div>
+    {% endcase %}
+{% endfor %}
+
+    </div>
+<div id="w-node-_34a29f99-ff2e-a79e-1ed0-daad6c4ea571-0eb6197d" class="content_image-wrapper">{% if section.settings.image_bild %}
+<img loading="lazy" alt="{{ section.settings.image_bild.alt }}" src="{{ section.settings.image_bild | img_url: 'master' }}" class="content_image-product">
+{% else %}
+ {{  'detailed-apparel-1' | placeholder_svg_tag: 'content_image-product'  }} 
+{% endif %}
+</div></div></div></div> {% schema %} {"tag":"section","name":"Brand Presentation E","class":"section_content-our-story","blocks":[{"name":"Headline small","type":"headline-small","settings":[{"id":"text_sub_headline","type":"text","label":"Sub Headline","default":"Small Headline"}]},{"name":"Headline","type":"headline","settings":[{"id":"text_headline","type":"text","label":"Headline","default":"Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy."}]},{"name":"Text","type":"text","settings":[{"id":"richtext_presentation","type":"richtext","label":"Presentation","default":"<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.<\/p>"}]},{"type":"@app"}],"settings":[{"id":"image_bild","type":"image_picker","label":"Bild"}],"presets":[{"name":"Brand Presentation E","category":"Liquify","blocks":[{"type":"headline-small"},{"type":"headline"},{"type":"text"}]}]} {% endschema %}

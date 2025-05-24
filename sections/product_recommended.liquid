@@ -1,26 +1,30 @@
-{% if recommendations.products.size > 0 %}    <div li-if="recommendations.products.size > 0" data-url="{{ routes.product_recommendations_url }}?section_id={{ section.id }}&product_id={{ product.id }}&limit=4&intent=related" class="padding-global padding-section-large product-recommendations">
-    <div class="container-large less-space"><div class="headline-wrapper"><h2 class="heading-style-h2">
+{% if recommendations.products.size > 0 %}    <div li-if="recommendations.products.size > 0" data-url="{{ routes.product_recommendations_url }}?section_id={{ section.id }}&product_id={{ product.id }}&limit=4&intent=related" class="padding-global padding-section-small">
+    <div class="container-large recommended-section"><div class="headline-wrapper"><h2 class="heading-style-h2">
 {{ section.settings.text_headline }}
 </h2>
-</div><div class="product_list-wrapper"><ul role="list" class="product_list w-list-unstyled"><li class="product_list-item hiddent-phone"><div class="recommandation-hero"><img src="{{ 'ENS1602cropped.jpg' | asset_url }}" loading="lazy" sizes="(max-width: 1200px) 100vw, 1200px" srcset="{{ 'a1f42468570bd5f3de5e5ec245b72462_ENS1602cropped-p-500.jpg' | asset_url }} 500w, {{ 'a1f42468570bd5f3de5e5ec245b72462_ENS1602cropped-p-800.jpg' | asset_url }} 800w, {{ 'a1f42468570bd5f3de5e5ec245b72462_ENS1602cropped-p-1080.jpg' | asset_url }} 1080w, {{ 'ENS1602cropped.jpg' | asset_url }} 1200w" alt="" class="image">
-<div class="reco-side-image-title">Signature<br>
-<span class="italic">Pairings</span></div></div></li>{% for product in recommendations.products %}    <li li-for="product in recommendations.products" class="product_list-item">
+</div><div class="product_list-wrapper"><div id="w-node-_664dbd88-3f74-32c3-f00a-23c51b1f5d0c-0eb6197f" class="intro-image">{% if section.settings.image_bild %}
+<img class="image" src="{{ section.settings.image_bild | img_url: 'master' }}" alt="{{ section.settings.image_bild.alt }}" sizes="(max-width: 1200px) 100vw, 1200px" loading="lazy">
+{% else %}
+ {{  'detailed-apparel-1' | placeholder_svg_tag: 'image'  }} 
+{% endif %}
+<div class="reco-side-image-title"> {{ section.settings.richtext_headline }} </div>
+</div><ul id="w-node-_1c92c2b0-3cda-49c6-2d3c-13298dfe3510-0eb6197f" role="list" class="product_list w-list-unstyled">{% for product in recommendations.products %}    <li li-for="product in recommendations.products" id="w-node-_1c92c2b0-3cda-49c6-2d3c-13298dfe3511-0eb6197f" class="product_list-item">
                                     
                             {% render 'product_item', product: product %}
 
                             
                         </li>
-{% endfor %}{% for product in recommendations.products %}    <li li-for="product in recommendations.products" class="product_list-item">
+{% endfor %}{% for product in recommendations.products %}    <li li-for="product in recommendations.products" id="w-node-_4c7c96a7-84be-a282-b741-381ab256dc73-0eb6197f" class="product_list-item">
                                     
                             {% render 'product_item', product: product %}
 
                             
                         </li>
-{% endfor %}{% for product in recommendations.products %}    <li li-for="product in recommendations.products" class="product_list-item">
+{% endfor %}{% for product in recommendations.products %}    <li li-for="product in recommendations.products" id="w-node-a3e6448b-a537-0c38-7017-bcebd4a18cfb-0eb6197f" class="product_list-item">
                                     
                             {% render 'product_item', product: product %}
 
                             
                         </li>
 {% endfor %}</ul></div></div>    </div>
-{% endif %} {% schema %} {"tag":"section","name":"Product-Recommended","class":"section_product-recommended","settings":[{"id":"text_headline","type":"text","label":"Headline","default":"Pair it With..."}],"presets":[{"name":"Product-Recommended","category":"Liquify","blocks":[]}]} {% endschema %}
+{% endif %} {% schema %} {"tag":"section","name":"Product-Recommended","class":"section_product-recommended","settings":[{"id":"text_headline","type":"text","label":"Headline","default":"Pair it With..."},{"id":"image_bild","type":"image_picker","label":"Bild"},{"id":"richtext_headline","type":"richtext","label":"Headline","default":"<p>Signature<br\/><span class=\"italic\">Pairings<\/span><\/p>"}],"presets":[{"name":"Product-Recommended","category":"Liquify","blocks":[]}]} {% endschema %}

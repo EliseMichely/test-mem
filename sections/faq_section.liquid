@@ -1,20 +1,20 @@
-<div class="padding-global padding-section-medium"><div class="container-large"><div class="default_wrapper faq">{% for block in section.blocks %}
+<div class="padding-global padding-section-medium"><div class="container-large-vertical"><div class="default_wrapper faq">{% for block in section.blocks %}
     {% if block.type == "faq-group" %}
-                    <div li-block="faq-group" class="faq-group">
+                    <div li-block="FAQ Group" class="faq-group">
                                     
                                     <div class="padding-bottom padding-medium"><h2 class="heading-style-h2">
-{{ block.settings.text_faq_section_title }}
+{{ block.settings.text_faq_block_title }}
 </h2>
 </div>
                                     
                                     {% for block in section.blocks %}
-    {% if block.type == "faq-item-last" %}
-                    <div li-block="FAQ Item last" class="product-header_accordions-wrapper">
+    {% if block.type == "faq-item-first" %}
+                    <div li-block="FAQ Item First" class="product-header_accordions-wrapper">
                                     
                                     <div class="product-accordion"><div class="product-accordion-header faq"><h3 class="accordion-heading for-faq">
-{{ block.settings.text_faq_title }}
+{{ block.settings.text_accordion_header }}
 </h3>
-<div id="w-node-_6d1852e2-cbd6-6716-6273-54a632da8bc2-0b51cea1" class="dropdown-icon dark-green faq-version w-embed"><svg width=" 100%" height=" 100%" viewbox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M2.55806 6.29544C2.46043 6.19781 2.46043 6.03952 2.55806 5.94189L3.44195 5.058C3.53958 4.96037 3.69787 4.96037 3.7955 5.058L8.00001 9.26251L12.2045 5.058C12.3021 4.96037 12.4604 4.96037 12.5581 5.058L13.4419 5.94189C13.5396 6.03952 13.5396 6.19781 13.4419 6.29544L8.17678 11.5606C8.07915 11.6582 7.92086 11.6582 7.82323 11.5606L2.55806 6.29544Z" fill="currentColor"></path></svg></div></div><div class="product-accordion-content faq"><div class="text-rich-text w-richtext"> {{ block.settings.richtext_faq_answer }} </div>
+<div id="w-node-dce5f7ec-debd-7cd5-993f-4644d70454fc-0eb6197d" class="dropdown-icon is-pine-tree w-embed"><svg width=" 100%" height=" 100%" viewbox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M2.55806 6.29544C2.46043 6.19781 2.46043 6.03952 2.55806 5.94189L3.44195 5.058C3.53958 4.96037 3.69787 4.96037 3.7955 5.058L8.00001 9.26251L12.2045 5.058C12.3021 4.96037 12.4604 4.96037 12.5581 5.058L13.4419 5.94189C13.5396 6.03952 13.5396 6.19781 13.4419 6.29544L8.17678 11.5606C8.07915 11.6582 7.92086 11.6582 7.82323 11.5606L2.55806 6.29544Z" fill="currentColor"></path></svg></div></div><div class="product-accordion-content faq"><div class="text-rich-text w-richtext"> {{ block.settings.richtext_faq_inner_text }} </div>
 <div class="accordion-spacer larger"></div></div><div class="divider no-space"></div></div>
                                     
                             </div>
@@ -24,12 +24,12 @@
                                     
                                     {% for block in section.blocks %}
     {% if block.type == "faq-item-last" %}
-                    <div li-block="FAQ Item last" class="product-header_accordions-wrapper">
+                    <div li-block="FAQ Item Last" class="product-header_accordions-wrapper">
                                     
                                     <div class="product-accordion"><div class="product-accordion-header faq"><h3 class="accordion-heading for-faq">
-{{ block.settings.text_faq_title_last }}
+{{ block.settings.text_accordion_header }}
 </h3>
-<div id="w-node-_7751b603-41e3-df82-fedf-0b189890c65b-0b51cea1" class="dropdown-icon dark-green faq-version w-embed"><svg width=" 100%" height=" 100%" viewbox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M2.55806 6.29544C2.46043 6.19781 2.46043 6.03952 2.55806 5.94189L3.44195 5.058C3.53958 4.96037 3.69787 4.96037 3.7955 5.058L8.00001 9.26251L12.2045 5.058C12.3021 4.96037 12.4604 4.96037 12.5581 5.058L13.4419 5.94189C13.5396 6.03952 13.5396 6.19781 13.4419 6.29544L8.17678 11.5606C8.07915 11.6582 7.92086 11.6582 7.82323 11.5606L2.55806 6.29544Z" fill="currentColor"></path></svg></div></div><div class="product-accordion-content faq"><div class="text-rich-text w-richtext"> {{ block.settings.richtext_faq_answer_last }} </div>
+<div id="w-node-_109963c6-5a48-bf9d-687a-2b12b051ed60-0eb6197d" class="dropdown-icon is-pine-tree w-embed"><svg width=" 100%" height=" 100%" viewbox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M2.55806 6.29544C2.46043 6.19781 2.46043 6.03952 2.55806 5.94189L3.44195 5.058C3.53958 4.96037 3.69787 4.96037 3.7955 5.058L8.00001 9.26251L12.2045 5.058C12.3021 4.96037 12.4604 4.96037 12.5581 5.058L13.4419 5.94189C13.5396 6.03952 13.5396 6.19781 13.4419 6.29544L8.17678 11.5606C8.07915 11.6582 7.92086 11.6582 7.82323 11.5606L2.55806 6.29544Z" fill="currentColor"></path></svg></div></div><div class="product-accordion-content faq"><div class="text-rich-text w-richtext"> {{ block.settings.richtext_faq_inner_text }} </div>
 <div class="accordion-spacer larger"></div></div></div>
                                     
                             </div>
@@ -40,4 +40,4 @@
                             </div>
             {% endif %}
 {% endfor %}
-</div></div></div> {% schema %} {"tag":"section","name":"faq-section","class":"section_default faq-padding","blocks":[{"name":"faq-group","type":"faq-group","settings":[{"id":"text_faq_section_title","type":"text","label":"faq-section-title","default":"Ethical Questions"}]},{"name":"FAQ Item last","type":"faq-item-last","settings":[{"id":"text_faq_title","type":"text","label":"faq-title","default":"Is your packaging sustainable?"},{"id":"richtext_faq_answer","type":"richtext","label":"faq-answer","default":"<p>\n                          The rich text element allows you to create and format headings, paragraphs, blockquotes, images, and video all in one place instead of having to add and format them individually. Just double-click and easily create content.\n                        <\/p>"}]},{"type":"@app"}],"presets":[{"name":"faq-section","category":"Liquify","blocks":[{"type":"faq-group"},{"type":"faq-item-last"}]}]} {% endschema %}
+</div></div></div> {% schema %} {"tag":"section","name":"FAQ Section","class":"section_faq","blocks":[{"name":"FAQ Group","type":"faq-group","settings":[{"id":"text_faq_block_title","type":"text","label":"FAQ Block Title","default":"Ethical Questions"}]},{"name":"FAQ Item First","type":"faq-item-first","settings":[{"id":"text_accordion_header","type":"text","label":"Accordion Header","default":"Is your packaging sustainable?"},{"id":"richtext_faq_inner_text","type":"richtext","label":"FAQ Inner Text","default":"<p>\n                        The rich text element allows you to create and format headings, paragraphs, blockquotes, images, and video all in one place instead of having to add and format them individually. Just double-click and easily create content.\n                      <\/p>"}]},{"name":"FAQ Item Last","type":"faq-item-last","settings":[{"id":"text_accordion_header","type":"text","label":"Accordion Header","default":"Is your packaging sustainable?"},{"id":"richtext_faq_inner_text","type":"richtext","label":"FAQ Inner Text","default":"<p>\n                        The rich text element allows you to create and format headings, paragraphs, blockquotes, images, and video all in one place instead of having to add and format them individually. Just double-click and easily create content.\n                      <\/p>"}]},{"type":"@app"}],"presets":[{"name":"FAQ Section","category":"Liquify","blocks":[{"type":"faq-group"},{"type":"faq-item-first"},{"type":"faq-item-last"}]}]} {% endschema %}
